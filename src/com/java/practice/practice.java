@@ -9,29 +9,24 @@ public class practice {
 	// Driver program to run the case
 	public static void main(String args[])
 	{
-	    int N = 22074568;
+	    long N = 11110;
 	    System.out.println(evenlyDivides(N));
 	}
 	
-	protected static int evenlyDivides(int N) {
+	protected static long evenlyDivides(long N) {
 		
-		int tem=N,ans=0;
+		if(N==0) return 0;
 		
-		while(tem !=0) {
-			
-			//get the last digit
-			int d=tem%10;
-			
-			//remove last digit in tem
-			tem /=10;
-			
-			if(d >0 && (N%d ==0)) {
-				ans++;
-			}
-			
-		}
+		String numToString=String.valueOf(N);
 		
+		StringBuilder sb=new StringBuilder(numToString);
+		sb.reverse();
+		
+		long ans=Long.valueOf(sb.toString());
+		
+		
+	    
 		return ans;
-	} 
+	}
 		
 }
