@@ -1,34 +1,31 @@
 package com.java.practice;
 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class practice {
 	
 	  public static void main(String[] args) {
-		  int x=8;
-		  int n=16;
-		  System.out.println(pow(x,n));
-	      System.out.println("GCD: " + gcd(x,n));
 		  
+	   
+		  
+	   System.out.println(printDivisors(10));
+		   
+
 	  }
-	  
-	  public static int pow(int A,int B) {
-		  
-		  int ans= A < B ? A : B;
-		  
-		  while(ans > 0) {
-			  
-			  if((A % ans ==0)&&(B % ans ==0) ) break;
-			  
-			  ans--;
-		  }
-		  
-		  return ans;
-	  }
-	  
-	  public static int gcd(int A, int B) {
-	        if (B == 0) {
-	            return A;
-	        } else {
-	            return gcd(B, A % B);
-	        }
+
+	    public static List< Integer > printDivisors(int n) {
+	    	
+	    	List<Integer> ans=new ArrayList<>();
+	    	
+	    	for (int a=1 ; a <= n ; a++) {
+	    		
+	    		if(n % a == 0) {
+		    		ans.add(a);
+	    		}
+	    	}
+	    	Collections.sort(ans);
+			return ans;
 	    }
 }
