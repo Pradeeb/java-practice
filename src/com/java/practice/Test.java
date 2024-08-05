@@ -1,19 +1,28 @@
 package com.java.practice;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class Test {
 
 	public static void main(String[] args) {
+		String str = "123";
+
+		System.out.println(reverse(str));
 		
-		List<String> str=Arrays.asList("One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten");
+	}
+	
+	public static String reverse(String in) {
 		
-		String out=str.stream().collect(Collectors.joining(", "));
+		if (in == null ) throw new NullPointerException("Null is not valid input");
 		
-		System.out.println(out);
+		char[] ch=in.toCharArray(); 
 		
+		StringBuilder sb=new StringBuilder();
+		
+		for(int i=ch.length-1; i>=0 ;i--) {
+			sb.append(ch[i]);
+		}
+		   	String out=sb.toString();
+        
+		return out;
 	}
 }
 
