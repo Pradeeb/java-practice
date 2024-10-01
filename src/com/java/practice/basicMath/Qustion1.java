@@ -1,4 +1,4 @@
-package com.java.practice;
+package com.java.practice.basicMath;
 
 public class Qustion1 {
 

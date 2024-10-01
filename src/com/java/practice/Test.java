@@ -1,28 +1,39 @@
 package com.java.practice;
 
 public class Test {
-
 	public static void main(String[] args) {
-		String str = "123";
+		
+		StringBuilder sb = new StringBuilder("Initial");
 
-		System.out.println(reverse(str));
-		
-	}
-	
-	public static String reverse(String in) {
-		
-		if (in == null ) throw new NullPointerException("Null is not valid input");
-		
-		char[] ch=in.toCharArray(); 
-		
-		StringBuilder sb=new StringBuilder();
-		
-		for(int i=ch.length-1; i>=0 ;i--) {
-			sb.append(ch[i]);
-		}
-		   	String out=sb.toString();
+        // Create two threads that will modify the StringBuilder
+        Thread thread1 = new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                sb.append("A");
+                System.out.println("Thread 1: " + sb.toString());
+            }
+        });
+
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                sb.append("B");
+                System.err.println("Thread 2: " + sb.toString());
+            }
+        });
+
+        // Start both threads
+        thread1.start();
+        thread2.start();
         
-		return out;
+        try {
+            thread1.join();
+            thread2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // Final result
+        System.out.println("Final StringBuilder content: " + sb.toString());
+        
 	}
 }
 

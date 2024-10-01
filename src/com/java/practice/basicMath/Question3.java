@@ -1,4 +1,4 @@
-package com.java.practice;
+package com.java.practice.basicMath;
 
 
 /*Given a number n. Count the number of digits in n which evenly divide n. Return an integer, total number of digits of n which divides n evenly.
@@ -27,7 +27,7 @@ public class Question3 {
 
 	public static void main(String[] args) {
 		
-		    int n1 = 12;
+		    int n1 = 22;
 	        int n2 = 2446;
 	        int n3 = 23;
 
