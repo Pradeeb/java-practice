@@ -5,16 +5,14 @@ public class Qustion1 {
 	//Find even or odd
 	
 	public static void main(String[] args) {
-		
-		Solution ob=new Solution();
-		
-		System.out.println(ob.oddEven(0));
+			
+		System.out.println(oddEven(0));
 
 	}
 
 }
 
-class Solution{
+class static Solution{
   static String oddEven(int N){
       
       String out=null;
