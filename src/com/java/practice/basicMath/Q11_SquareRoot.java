@@ -17,7 +17,7 @@ package com.java.practice.basicMath;
 public class Q11_SquareRoot {
 
 	public static void main(String[] args) {
-   System.out.println(floorSqrt(5));
+   System.out.println(floorSqrt(25));
    }
 
 	public static long floorSqrt(long n) {

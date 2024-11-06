@@ -15,9 +15,9 @@ public class Qustion1 {
 	      String out=null;
 	      
 	      if(N%2 != 0){
-	        out="odd"; 
+	        out="odd";
 	      }else{
-	        out="even"; 
+	        out="even";
 	      }
 	      return out;
 	  }
