@@ -8,12 +8,10 @@ package com.java.practice.basicMath;
 public class Q6_GCD {
 
 	public static void main(String[] args) {
-		
-     int a=8;
-     int b=54;
-     
-     System.out.println(findGCD(a,b));
-		
+
+     int c=8;
+     int d=16;
+     System.out.println(findGCD(c,d));
 	}
 	
 	public static int findGCD(int a, int b) {
