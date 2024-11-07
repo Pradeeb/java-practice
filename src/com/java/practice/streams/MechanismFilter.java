@@ -5,13 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Mechanism {
+public class MechanismFilter {
 	
 //	its have a two mechanism MAP and FILTER, package Java.utill.stream
 	 
 	public static void main(String[] args) {
     	
-		//filter demo 
+		//***********************  filter demo *********************************
 		ArrayList<Integer> numbers =new ArrayList<Integer>();
 		numbers.add(18);
 		numbers.add(14);
@@ -29,7 +29,8 @@ public class Mechanism {
 		System.out.println(numbers.stream().count());
 		
 		
-		//filter demo 2 multiple filter
+		//***********************  filter demo 2 multiple filter  ***************************
+		
 		List<String> names=Arrays.asList("valan","pradeeb","nazeem","arul","selva");
 		
 		//Multiple conditions add
