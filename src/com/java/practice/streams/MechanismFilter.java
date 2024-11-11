@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class MechanismFilter {
 	
-//	its have a two mechanism MAP and FILTER, package Java.utill.stream
+   //	its have a two mechanism MAP and FILTER, package Java.utill.stream
 	 
 	public static void main(String[] args) {
     	

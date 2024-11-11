@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 public class MechanisamFlatMap {
 
+	//flatMap()
 	public static void main(String[] args) {
 		
 		//Learn FlatMap here
