@@ -5,6 +5,8 @@ import java.util.stream.Collectors;
 import java.util.Arrays;
 
 public class MapMechanisasm {
+	
+	//map()
 
 	public static void main(String[] args) {
 
@@ -13,6 +15,8 @@ public class MapMechanisasm {
 		vehicles=vehicles.stream().map(x->x.toUpperCase()).collect(Collectors.toList());
 
 		vehicles.stream().forEach(System.out::println);
+		
+		vehicles.stream().forEach(l -> System.out.println(l));
 	}
 
 }

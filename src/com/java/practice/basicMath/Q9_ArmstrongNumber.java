@@ -1,3 +1,4 @@
+
 package com.java.practice.basicMath;
 
 public class Q9_ArmstrongNumber {
