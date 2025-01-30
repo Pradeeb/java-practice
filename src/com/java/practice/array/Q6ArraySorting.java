@@ -12,8 +12,9 @@ public class Q6ArraySorting {
     static void sorting(int[] arr) {
 
         // Using Bubble Sort for demonstration
-        for (int i = 0; i <= arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1 - i; j++) {
+        for (int i = 0; i < arr.length; i++) {
+        	
+            for (int j = 0; j < arr.length-1 - i; j++) {
                 // Check if the current element is greater than the next element
                 if (arr[j] > arr[j + 1]) {
                     // Swap elements

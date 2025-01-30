@@ -24,9 +24,9 @@ public class Q1FindMaxMin {
 		
 		System.out.print(min+"  "+max);
 		
-//		for(int i=0; i <= numbers.length-1 ;i++) {
-//			System.out.println(numbers[i]+" "+"index =>"+i);
-//		}
+		for(int i=0; i < numbers.length ;i++) {
+			System.out.println(numbers[i]+" "+"index =>"+i);
+		}
 		
 	}
 }
