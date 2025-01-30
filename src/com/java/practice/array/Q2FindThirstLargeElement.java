@@ -10,6 +10,6 @@ public class Q2FindThirstLargeElement {
 		int[] number= {2, 4, 1, 3, 5};
 		Arrays.sort(number);
 		System.out.println(number[number.length-3]);
-			}
+	 }
 
 }
