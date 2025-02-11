@@ -24,7 +24,6 @@ public class Q4FindingMissingElement {
 			}
 			start++;
 		}
-		
 		return start;
 	}
 

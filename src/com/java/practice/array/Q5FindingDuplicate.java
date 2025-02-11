@@ -11,11 +11,18 @@ public class Q5FindingDuplicate {
 	}
 	
 	public static void findDuplicate(int[] arr) {
-		
+		//Method 1
+		for(int i=0; i< arr.length ; i++) {
+			for(int j=i+1; j< arr.length ; j++) {
+				if(arr[i] == arr[j]) {
+					System.out.print(arr[i]+" ");
+				}
+			}		
+		}
+		//Method 2
+		System.out.println();
 		Set<Integer> seen =new HashSet<Integer>();	
-		
 		for(int num:arr) {
-		
 		if(!seen.add(num)) {
 			System.out.print(num+" ");
 		}
