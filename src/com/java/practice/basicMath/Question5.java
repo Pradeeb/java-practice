@@ -10,7 +10,6 @@ public class Question5 {
 		System.out.println(obj.power(12, 12));
 
 	}
-
 }
 
 

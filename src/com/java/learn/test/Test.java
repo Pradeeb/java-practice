@@ -1,25 +1,24 @@
 package com.java.learn.test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test {
-	    public static void main(String[] args) {
-
-			
-			int[] arr= {1,2,3,4,5};// out put [5, 1, 2, 3, 4]
-			clockwise(arr); 
+	public static void main(String[] args) {
 		
-	    }
+		
+		printAllNumber(8,16);
+	}
 
-		private static void clockwise(int[] arr) {
-			
-			int length=arr.length-1;
-			int lastElement=arr[length];
-            			
-			for(int i=length; i>0 ;i--) {
-				arr[i]=arr[i-1];
-			}
-			arr[0]=lastElement;
-			for(int num:arr) {
-				System.out.print(num+",");
-			}
+	private static void printAllNumber(int a,int b) {
+		if(b==0) {
+			System.out.println(a);
+			return;
 		}
+		printAllNumber(b,a%b);
+		System.out.println(++a);
+	}
+
+
+
 }
