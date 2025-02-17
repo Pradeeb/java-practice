@@ -4,7 +4,7 @@ package com.java.practice.basicMath;
 public class Q9_ArmstrongNumber {
 
 	public static void main(String[] args) {
-		System.out.println(armstrongNumber(375));
+		System.out.println(armstrongNumber(153));
 	}
 	
 	static String armstrongNumber(int n) {

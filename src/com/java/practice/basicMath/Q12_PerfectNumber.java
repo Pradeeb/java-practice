@@ -34,28 +34,22 @@ public class Q12_PerfectNumber {
 		System.out.println(isPerfectNumber(6));
 	}
 
-	static int isPerfectNumber(long n) {
+	static long isPerfectNumber(long n) {
         if (n <= 1) {
             return 0; // No perfect number less than or equal to 1
         }
-
-        long sum = 1; // Start with 1 because 1 is a divisor of every number
-
-        // Check divisors up to sqrt(n)
-        for (long i = 2; i * i <= n; i++) {
-            if (n % i == 0) {
-                sum += i;
-                if (i != n / i) {
-                    sum += n / i;
-                }
-            }
+        long sum=0;
+        for(int i=1; i<= n/2 ;i++)
+        {
+        	if(n%i == 0) {
+        		sum += i;
+        	}
         }
-
-        // After the loop, compare sum with n
-        if (sum == n) {
-            return 1;
-        } else {
-            return 0;
+        
+        if(sum==n) {
+        	 return 1;
         }
+        
+     return 0;
     }
 }
