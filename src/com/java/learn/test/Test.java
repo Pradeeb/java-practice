@@ -1,24 +1,29 @@
 package com.java.learn.test;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Test {
 	public static void main(String[] args) {
 		
+		int n=16;
 		
-		printAllNumber(8,16);
+		find(n,n,true);
+		
+		
 	}
-
-	private static void printAllNumber(int a,int b) {
-		if(b==0) {
-			System.out.println(a);
-			return;
+	
+	public static void find(int n,int og,boolean decreasing) {
+		
+		System.out.print(n+" ");
+		
+		//base case
+		if(!decreasing && n==og) {
+			return ;
 		}
-		printAllNumber(b,a%b);
-		System.out.println(++a);
+		int valueOfn=decreasing? n-5 :n+5;
+		
+		if(n - 5 <= 0) {
+			decreasing=false;
+		}
+		find(valueOfn,og,decreasing);
 	}
-
-
-
 }

@@ -20,16 +20,15 @@ public class Q38PrintNDegit {
 
 	public static void main(String[] args) {
 		
-		printN(10);
+		printN(5);
 
 	}
 	
 	public static void printN(int n) {
 		
 		if( n == 0) return;
-//		System.out.print(n+" ");
 		printN(n-1);
-		System.out.print(n+" ");		
+		System.out.print(n+" ");
 	}
 
 
