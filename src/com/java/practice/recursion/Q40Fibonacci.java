@@ -3,11 +3,12 @@ package com.java.practice.recursion;
 public class Q40Fibonacci {
 
     public static void main(String[] args) {
-        int n = 5; // Example input
+        int n = 6; // Example input
         System.out.println("Fibonacci number at position " + n + " is: " + fibonacci(n));
     }
     
 	public static int fibonacci(int n) {
+		System.out.println( n);
         if (n == 0) {
             return 0; // Base case: F(0) = 0
         }
