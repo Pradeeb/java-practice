@@ -1,29 +1,31 @@
 package com.java.learn.test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Test {
+	
 	public static void main(String[] args) {
 		
-		int n=16;
+		Integer[] numbers= {1,2,3,4,5};
 		
-		find(n,n,true);
+		List<Integer>num=Arrays.asList(numbers);
 		
+		Optional<Integer> re=num.stream().min((x,y)->{return x.compareTo(y);});
 		
+		System.out.println(re.get());
+		
+		List<Integer> reverse=num.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+		
+		System.out.println(reverse);
+		
+		num.stream().sorted().collect(Collectors.toList());
+		
+		System.out.println(num);
 	}
-	
-	public static void find(int n,int og,boolean decreasing) {
-		
-		System.out.print(n+" ");
-		
-		//base case
-		if(!decreasing && n==og) {
-			return ;
-		}
-		int valueOfn=decreasing? n-5 :n+5;
-		
-		if(n - 5 <= 0) {
-			decreasing=false;
-		}
-		find(valueOfn,og,decreasing);
-	}
+
 }
