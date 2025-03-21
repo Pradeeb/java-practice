@@ -2,6 +2,40 @@ package com.java.learn.string;
 
 import java.util.Arrays;
 
+
+ 
+/*
+ *
+ *  String without parameter Method()
+ *
+ 1. trim()
+ 2. toUpperCase();
+ 3. toLowerCaes();
+ 4. toCharArray();
+ 5. isEmpty();
+ 
+ *  String with parameter Method
+ *  
+ *  string parameter
+ *  
+ 6. contains(CharSequence value);
+ 7. concat(String value);
+ 8. equals(String value);
+ 9. equalsIgnoreCase(String value);
+ 10. split(String value);  split(String regex, int limit)
+ 11. indexOf(String value);
+ 12. endsWith(String suffix);
+ * 
+ *  Integer parameter
+ *  
+ 13. charAt(int index);
+ 14. subString(int start); subString(int start, int end);
+ 
+ 15. replace(String old,String new); replaceAll(String regex, String replacement)
+ 16. getChars(int srcBeginIndex, int srcEndIndex, char[] destination, int dstBeginIndex);
+ *   
+  */
+
 public class Test {
 
 	public static void main(String[] args) {
