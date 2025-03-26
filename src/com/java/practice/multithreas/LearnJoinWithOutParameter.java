@@ -7,7 +7,6 @@ public class LearnJoinWithOutParameter {
 		
 		Runnable run= () -> {
 			for(int i=0 ; i<=5 ; i++) {
-			
 				System.out.println(i+" "+Thread.currentThread().getName());
 			}
 		};
