@@ -9,7 +9,7 @@ public class CreateThreadUseInterface implements Runnable{
 
 	public static void main(String[] args) {
 
-		CreateThreadUseInterface run=new CreateThreadUseInterface();
+		Runnable run=new CreateThreadUseInterface();
 		
 		Thread thread=new Thread(run);
 		thread.start();
