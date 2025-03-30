@@ -70,6 +70,13 @@ public class StarPatterns {
 		}
 
 		/* Pattern 4 */
+		
+//	     *
+//	    ***
+//	   *****
+//	  *******
+//	 *********
+		
 		System.out.println("");
 		System.out.println("Pattern 4");
 		
