@@ -11,6 +11,18 @@ import java.util.ArrayList;
 //remove use index and element
 //clear
 
+/*
+ 
+
+Allows duplicates
+
+Maintains insertion order 
+
+Not synchronized ❌ (Use Collections.synchronizedList() for thread safety)
+
+Supports null elements 
+
+*/
 
 public class ArrayListLearn {
 	
@@ -32,22 +44,22 @@ public class ArrayListLearn {
 		
 		//get  retrun Element
 		int numbet=num.get(0);
-		System.out.println("get  retrun Element"+num);
+		System.out.println("get  retrun Element"+numbet);
 		System.out.println("");
 		
-		//set return old element
+		//set replace old element
 		int old=num.set(1, 2);
-		System.out.println("set return old element"+num);
+		System.out.println("set replace & return old element"+old);
 		System.out.println("");
 		
 		//remove use index
 		int removedElement=num.remove(0);
-		System.out.println("remove use index"+num);
+		System.out.println("remove use index"+removedElement);
 		System.out.println("");
 		
 		//remove use Element
 		boolean ifRemove=num.remove((Integer) 4);
-		System.out.println("remove use Element"+num);
+		System.out.println("remove use Element"+ifRemove);
 		System.out.println("");
 		
 		//clear() remove all element
