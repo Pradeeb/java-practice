@@ -24,6 +24,28 @@ Supports null elements
 
 */
 
+
+/* below is common for all implemented class
+
+Method                                | Description
+
+add(E e)                              | Add element to the end
+add(int index, E element)             | Add at specific index
+get(int index)                        | Get element at index
+set(int index, E element)             | Replace element at index
+remove(int index)                     | Remove element by index
+remove(Object o)                      | Remove first occurrence of object
+size()                                | Number of elements
+isEmpty()                             | Check if list is empty
+clear()                               | Remove all elements
+contains(Object o)                    | Check if element exists
+indexOf(Object o)                     | Get index of first occurrence
+lastIndexOf(Object o)                 | Get index of last occurrence
+subList(int from, int to)             | Returns a view from from (inclusive) to to (exclusive)
+toArray()                             | Convert to array
+iterator()                            | Get iterator to loop
+
+*/
 public class ArrayListLearn {
 	
 	public static void main(String arg[]) {
