@@ -1,4 +1,4 @@
-package com.java.learn.collection;
+package com.java.learn.collection.queue;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
