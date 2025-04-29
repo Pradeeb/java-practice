@@ -1,4 +1,4 @@
-package com.java.learn.basic.inheritance;
+package com.java.learn.basic.oops.inheritance;
 
 public class LearnInheritance extends john {
 
