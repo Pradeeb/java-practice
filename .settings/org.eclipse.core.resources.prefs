@@ -1,9 +1,11 @@
 eclipse.preferences.version=1
 encoding//src/com/java/learn/collection/list/ArrayListLearn.java=UTF-8
 encoding//src/com/java/learn/collection/list/VectroLearn.java=UTF-8
+encoding//src/com/java/learn/collection/map/LearnHashMap.java=UTF-8
 encoding//src/com/java/learn/collection/queue/ArrayDeQueueLearn.java=UTF-8
 encoding//src/com/java/learn/collection/queue/PriorityQueueLearn.java=UTF-8
 encoding//src/com/java/learn/collection/set/HashSetLearn.java=UTF-8
+encoding//src/com/java/learn/collection/set/LearnLinkedHashSet.java=UTF-8
 encoding//src/com/java/learn/collection/set/TreeSetExample.java=UTF-8
 encoding//src/com/java/learn/string/Q422Atoi.java=UTF-8
 encoding//src/com/java/practice/recursion/Q42NumberPattern.java=UTF-8

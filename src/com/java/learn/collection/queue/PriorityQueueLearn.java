@@ -36,6 +36,18 @@ poll()	                  Retrieves and removes the head (min by default)
 peek()	                  Retrieves but does not remove the head
 remove(Object o)	      Removes specific element
 
+
+
+Feature	              Description
+
+Package	                 java.util
+Implements	             Queue<E>, Collection<E>, Iterable<E>
+Backed by	             Min-Heap (binary heap implemented with an array)
+Order	                 Natural order or custom comparator
+Allows null?	         ❌ No, inserting null throws NullPointerException
+Thread-safe?	         ❌ No — needs external synchronization if used by multiple threads
+Duplicate elements?      ✅ Yes — duplicates are allowed
+Time Complexity          O(log n) for offer(), poll(), and remove()
 */
 public class PriorityQueueLearn {
 

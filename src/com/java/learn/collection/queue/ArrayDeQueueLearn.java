@@ -53,6 +53,16 @@ peekLast()	    Retrieves rear element
 push(E e)	    Same as addFirst() — for stack use
 pop()	        Same as removeFirst() — for stack use
 
+
+Feature             	Description
+Package	                  java.util
+Implements                Deque<E>, Queue<E>, Collection<E>
+Underlying structure	  Resizable array
+Thread-safe	              ❌ No — use externally synchronized if needed
+Null elements allowed	  ❌ No — inserting null throws NullPointerException
+Faster than	              Stack (for LIFO), LinkedList (for Deque operations)
+Allows duplicates	      ✅ Yes
+
  */
 	
 

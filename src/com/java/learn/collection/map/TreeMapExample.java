@@ -16,8 +16,8 @@ public class TreeMapExample {
         TreeMap<Integer, String> map = new TreeMap<>();
 
         map.put(3, "Three");
-        map.put(1, "One");
-        map.put(2, "Two");
+        map.put(2, "One");
+        map.put(1, "Two");
 
         System.out.println("TreeMap (sorted):");
         for (Integer key : map.keySet()) {

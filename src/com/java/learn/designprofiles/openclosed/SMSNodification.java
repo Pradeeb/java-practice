@@ -7,5 +7,4 @@ public class SMSNodification implements NodificationService {
 		// TODO Auto-generated method stub
 		
 	}
-
 }
