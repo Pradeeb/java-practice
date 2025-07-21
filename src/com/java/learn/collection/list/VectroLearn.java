@@ -19,6 +19,14 @@ Allows duplicates
 Allows null values	
 Random access by index	
 
+
+Method	        Description
+
+push(E e)	    Add item to top of stack
+pop()	        Remove and return top item
+peek()      	Just return top item without removing
+isEmpty()	     Check if stack is empty
+
 */
 public class VectroLearn {
 

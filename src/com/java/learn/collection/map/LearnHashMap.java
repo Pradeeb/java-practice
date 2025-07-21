@@ -27,6 +27,20 @@ public class LearnHashMap {
         map.put(3, "Mango");
         map.put(2, "Orange"); // Overwrites value at key 2
 
+        // 🔹 Null key allowed (only one)
+        map.put(null, "Papaya");
+
+        // 🔹 Null value allowed
+        map.put(4, null);
+
+        // 🔹 Add more elements
+        map.put(5, "Grapes");
+        map.put(6, "Watermelon");
+
+        // 🔹 Overwriting null value
+        map.put(4, "Pineapple"); // Replaces null with "Pineapple"
+
+
         // Printing entire map
         System.out.println("HashMap: " + map);
 
