@@ -20,7 +20,7 @@ public class LearnJoinWithParameter {
 		
 		thread.start();
 		
-		thread.join(2000);
+		thread.join(1000);
 		
 		//thread.join(2000,1000); // millisec,nanosec
 		

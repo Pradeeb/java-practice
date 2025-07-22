@@ -22,12 +22,13 @@ public class ThreadInterruption {
 		thread.start();
 		
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(20000);
 		}catch(InterruptedException e) {
 			
 		}
 		
 		thread.interrupt();
+		
 	}
 
 }
