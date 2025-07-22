@@ -13,7 +13,7 @@ public class CreateThreadUseInterface implements Runnable{
 		
 		Thread thread=new Thread(run);
 		thread.start();
-		
+		 
 	}
 
 }

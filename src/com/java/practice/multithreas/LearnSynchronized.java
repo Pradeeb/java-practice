@@ -37,7 +37,7 @@ class Counter {
 
 	private int count = 0;
 
-	public void increment() throws InterruptedException {
+	public synchronized void increment() throws InterruptedException {
 		Thread.sleep(400);
 		count++;
 		System.out.println(count);

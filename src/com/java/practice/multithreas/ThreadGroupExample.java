@@ -4,19 +4,9 @@ public class ThreadGroupExample {
 
 	public static void main(String[] args) throws InterruptedException {
 		ThreadGroup group = new ThreadGroup("Group-1");
-
-		Thread thread1 = new Thread(group, () -> {
-			for (int i = 0; i <= 5; i++) {
-				System.out.println(Thread.currentThread().getName() + " in " + group.getName());
-				try {
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-					System.out.println(Thread.currentThread().getName() + " interrupted.");
-				}
-			}
-		},"Thread 1");
 		
-		Thread thread2 = new Thread(group, () -> {
+		Runnable run=()->{
+
 			for (int i = 0; i <= 5; i++) {
 				System.out.println(Thread.currentThread().getName() + " in " + group.getName());
 				try {
@@ -25,7 +15,11 @@ public class ThreadGroupExample {
 					System.out.println(Thread.currentThread().getName() + " interrupted.");
 				}
 			}
-		},"Thread 2");
+		
+		};
+
+		Thread thread1 = new Thread(group, run,"Thread 1");
+		Thread thread2 = new Thread(group,run,"Thread 2");
 		
         thread1.start();
         thread2.start();
@@ -39,9 +33,10 @@ public class ThreadGroupExample {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        
+        System.out.println(  group.getName());
         group.interrupt();  // Interrupts all threads in the group
-
+      
+     
 	}
 
 }
