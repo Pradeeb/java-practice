@@ -9,6 +9,7 @@ public class LearnSynchronized {
 			for (int i = 1; i <= 10; i++) {
 				try {
 					counter.increment();
+					System.out.println(Thread.currentThread().getName());
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -16,8 +17,8 @@ public class LearnSynchronized {
 			}
 		};
 
-		Thread thread1 = new Thread(run);
-		Thread thread2 = new Thread(run);
+		Thread thread1 = new Thread(run,"Team A");
+		Thread thread2 = new Thread(run,"Team B");
 		
 		thread1.start();
 		thread2.start();
@@ -35,7 +36,7 @@ public class LearnSynchronized {
 
 class Counter {
 
-	private int count = 0;
+	private static int count = 0;
 
 	public synchronized void increment() throws InterruptedException {
 		Thread.sleep(400);
