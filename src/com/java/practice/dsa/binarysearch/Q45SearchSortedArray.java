@@ -1,4 +1,4 @@
-package com.java.practice.binarysearch;
+package com.java.practice.dsa.binarysearch;
 
 /*
  
@@ -31,14 +31,16 @@ public class Q45SearchSortedArray {
 	}
 
 	 private static boolean findIndex(int[] a, int find, int start, int end) {
+		 
 	        while (start <= end) {
+	        	
 	            int mid = (start + end) / 2;
 
-	            if (a[mid] == find) {
-	                return true; // found
-	            } else if (a[mid] > find) {
-	                end = mid - 1; // search left half
-	            } else {
+	            if (a[mid] == find) {	          	
+	                return true; // found	                
+	            } else if (a[mid] > find) {	            	
+	                end = mid - 1; // search left half	                
+	            } else {	            	
 	                start = mid + 1; // search right half
 	            }
 	        }
