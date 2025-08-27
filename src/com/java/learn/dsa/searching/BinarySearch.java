@@ -1,4 +1,4 @@
-package com.java.learn.dsa;
+package com.java.learn.dsa.searching;
 
 public class BinarySearch {
 	/*
