@@ -2,37 +2,23 @@ package com.java.practice.basicMath;
 
 public class Question5 {
 
-	public static void main(String[] args) {
-		
-		Solution5 obj = new Solution5();
-		
-		
-		System.out.println(obj.power(12, 12));
+    private static final int MOD = 1000000007;
 
-	}
-}
-
-
-class Solution5
-{
-        
-	static final int MOD = 1000000007;
-
-    // Function to perform modular exponentiation
-    long power(int N, int R) {
-        return powerMod(N, R, MOD);
+    public static void main(String[] args) {
+        System.out.println(power(12, 12));
     }
 
-    // Helper function to perform modular exponentiation
-    long powerMod(long base, long exp, long mod) {
-        if (exp == 0) {
-            return 1;
+    // Modular exponentiation (recursive)
+    public static long power(long base, long exp) {
+        if (exp == 0) return 1;
+
+        long half = power(base, exp / 2) % MOD;
+        long result = (half * half) % MOD;
+
+        if (exp % 2 == 1) {
+            result = (result * base) % MOD;
         }
-        long half = powerMod(base, exp / 2, mod);
-        half = (half * half) % mod;
-        if (exp % 2 != 0) {
-            half = (half * base) % mod;
-        }
-        return half;
+        return result;
     }
+    
 }

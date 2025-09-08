@@ -4,7 +4,9 @@ public class LearnThreadPriority {
 
 	public static void main(String[] args) {
 		Runnable run = ( ) ->{
+			for(int i =0 ; i <= 5 ; i++) {
 			 System.out.println(Thread.currentThread().getName() + " with priority " + Thread.currentThread().getPriority() + " is running.");
+			}
 		};
 		
 		Thread thread1=new Thread(run);

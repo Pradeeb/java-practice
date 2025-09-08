@@ -28,6 +28,8 @@ public class ThreadInterruption {
 		}
 		
 		thread.interrupt();
+		// we do not use join so it come first in console
+		System.err.println("Completed");
 		
 	}
 

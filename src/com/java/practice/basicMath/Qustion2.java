@@ -33,7 +33,7 @@ public class Qustion2 {
 	public static void main(String[] args) {
      
 		Qustion2Solution ob=new Qustion2Solution();
-		System.out.println(ob.getLastDigit("22", "2536"));
+		System.out.println(ob.getLastDigit("14", "256"));
 	}
 
 }
