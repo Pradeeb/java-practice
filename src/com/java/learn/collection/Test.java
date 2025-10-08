@@ -1,29 +1,28 @@
 package com.java.learn.collection;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
 public class Test{
 	public static void main(String [] args) {
-		int n=5;
 		
-		for(int i=1 ;i <=n ;i++) {
-			for(int j=i ;j <n ;j++) {
-				System.out.print(" ");
-			}
-			for(int j=1 ;j <=(2 * i - 1) ;j++) {
-				System.out.print("*");
-			}
-			System.out.println("");
+		int[] arr= {,};
+		
+		List<Integer> num=new ArrayList<Integer>();
+		
+		num.add(1);
+		num.add(2);
+		num.add(3);
+		num.add(4);
+		num.add(5);
+		
+		ListIterator<Integer> it=num.listIterator();
+		
+		while(it.hasNext()) {
+			System.out.println(it.next());
 		}
-		
-		
-		for(int i=1 ; i<=n ;i++)  {
-			for(int j=i; j<n ;j++ ) {
-				System.out.print(" ");
-			}
-			
-			for(int j=1; j<= (2 * i -1) ;j++ ) {
-				System.out.print("*");
-			}
-			System.out.println("");
-		}
+
 	}
 }
