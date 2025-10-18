@@ -1,32 +1,18 @@
 package com.java.practice.streams;
 
-interface Cat{
-	default void eat() {
-		System.out.println("Cat eating");
-	}
-}
-interface Dog {
-	
-	default void eat() {
-		System.out.println("Dog Eating");
-	}
-}
-
-class Animal implements Cat,Dog{
-
-	@Override
-	public void eat() {
-		Cat.super.eat();
-		Dog.super.eat();
-	}
-	
-}
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Test {
 
 	public static void main(String[] args) {
-		Animal car=new Animal();
-		car.eat();
+		
+		List<Integer> numbers = Arrays.asList(1, 0, 2);
+		numbers.stream()
+		       .map(x -> 10 / x)
+		       .forEach(System.out::println);
 	}
 
 }
