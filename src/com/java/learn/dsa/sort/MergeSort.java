@@ -2,20 +2,25 @@ package com.java.learn.dsa.sort;
 
 import java.util.Arrays;
 
+// https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/
+
 public class MergeSort {
 
 	public static void main(String[] args) {
-		int[] input= {4,7,5,1};
+		int[] input= {7,4,2};
 
-		/* extra space consume 
+		//extra space consume 
 		Sorting sort=new Sorting();
 		System.out.println(Arrays.toString(sort.mergeSort(input)));
-		*/
+	
 		
-		Sorting sort=new Sorting();
 		
+		/* 
+		 // Sorting sort=new Sorting();
 		sort.mergeSortInPlace(input, 0, input.length);
 		System.out.println(Arrays.toString(input));
+		
+			*/
 	}
 
 }
