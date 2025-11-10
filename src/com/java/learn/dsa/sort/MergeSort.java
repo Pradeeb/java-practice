@@ -19,8 +19,7 @@ public class MergeSort {
 		 // Sorting sort=new Sorting();
 		sort.mergeSortInPlace(input, 0, input.length);
 		System.out.println(Arrays.toString(input));
-		
-			*/
+        */
 	}
 
 }
