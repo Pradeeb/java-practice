@@ -13,8 +13,7 @@ public class MergeSort {
 		Sorting sort=new Sorting();
 		System.out.println(Arrays.toString(sort.mergeSort(input)));
 	
-		
-		
+	
 		/* 
 		 // Sorting sort=new Sorting();
 		sort.mergeSortInPlace(input, 0, input.length);
