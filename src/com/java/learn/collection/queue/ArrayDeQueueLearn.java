@@ -40,6 +40,7 @@ import java.util.Queue;
 /*
  🧰 Common Methods
 Method	         Description
+
 addFirst(E e)	Inserts at the front
 addLast(E e)	Inserts at the rear
 offerFirst(E e)	Offers at front, returns false if fails
