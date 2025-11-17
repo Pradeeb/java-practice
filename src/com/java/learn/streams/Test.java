@@ -2,16 +2,27 @@ package com.java.learn.streams;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 
 public class Test {
 
 	public static void main(String[] args) {
 		
-		List<Integer> numbers = Arrays.asList(1, 0, 2);
+		List<String> numbers = Arrays.asList("10","21","a","20");
+		
 		numbers.stream()
-		       .map(x -> 10 / x)
-		       .forEach(System.out::println);
+	    .map(s -> {
+	        try {
+	            return Integer.parseInt(s);
+	        } catch (Exception e) {
+	            return null;   // or any fallback value
+	        }
+	    })
+	    .filter(Objects::nonNull)
+	    .filter(x-> x >=20)
+	    .forEach(System.out::println);
+		System.out.println("completed");
 	}
 
 }

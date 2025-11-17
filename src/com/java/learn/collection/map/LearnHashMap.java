@@ -6,6 +6,7 @@ import java.util.Map;
 
 /*
 Feature               | Description
+
 Key-value storage     | Stores entries in the form of key -> value.
 No duplicate keys     | Keys must be unique; values can be duplicated.
 Allows one null key   | You can have one null key and multiple null values.
