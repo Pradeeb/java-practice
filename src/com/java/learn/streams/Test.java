@@ -14,6 +14,7 @@ public class Test {
 		numbers.stream()
 	    .map(s -> {
 	        try {
+	        	System.out.println(s);
 	            return Integer.parseInt(s);
 	        } catch (Exception e) {
 	            return null;   // or any fallback value
