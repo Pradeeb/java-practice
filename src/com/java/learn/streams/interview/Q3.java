@@ -1,4 +1,4 @@
-package com.java.practice.youtube;
+package com.java.learn.streams.interview;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;
