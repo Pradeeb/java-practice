@@ -1,4 +1,4 @@
-package com.java.learn.streams;
+package com.java.learn.streams.interview;
 
 import java.util.Arrays;
 import java.util.List;
