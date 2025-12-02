@@ -9,8 +9,8 @@ public class LearnThreadPriority {
 			}
 		};
 		
-		Thread thread1=new Thread(run);
-		Thread thread2=new Thread(run);
+		Thread thread1=new Thread(run,"Thread 1");
+		Thread thread2=new Thread(run,"Thread 2");
 		
 		
 
