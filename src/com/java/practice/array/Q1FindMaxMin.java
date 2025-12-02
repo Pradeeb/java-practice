@@ -42,7 +42,7 @@ public class Q1FindMaxMin {
 		System.out.println("find second minimum value use stream => "+Arrays.stream(numbers).sorted().skip(1).min().getAsInt());
 		
 		//find second max value use stream
-		System.out.println("find second max value use stream => "+Arrays.stream(numbers).sorted().skip(1).max().getAsInt());
+		System.out.println("find second max value use stream => "+Arrays.stream(numbers).sorted().limit(numbers.length-1).max().getAsInt());
 		
 
 		
