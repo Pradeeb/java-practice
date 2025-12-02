@@ -1,6 +1,7 @@
 package com.java.learn.collection.queue;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Queue;
 
 /*
@@ -72,7 +73,7 @@ public class ArrayDeQueueLearn {
 	public static void main(String[] args) {
 		
 		
-		Queue<Integer> num=new ArrayDeque<>();
+		Deque<Integer> num=new ArrayDeque<>();
 		
 		num.add(2);
 		num.add(5);

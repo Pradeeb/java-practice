@@ -71,17 +71,17 @@ public class ArrayListLearn {
 		
 		//set replace old element
 		int old=num.set(1, 2);
-		System.out.println("set replace & return old element"+old);
+		System.out.println(old+" set replace & return old element "+num);
 		System.out.println("");
 		
 		//remove use index
 		int removedElement=num.remove(0);
-		System.out.println("remove use index"+removedElement);
+		System.out.println(removedElement+ "remove use index"+num);
 		System.out.println("");
 		
 		//remove use Element
 		boolean ifRemove=num.remove((Integer) 4);
-		System.out.println("remove use Element"+ifRemove);
+		System.out.println(ifRemove+ " remove use Element"+num);
 		System.out.println("");
 		
 		//clear() remove all element

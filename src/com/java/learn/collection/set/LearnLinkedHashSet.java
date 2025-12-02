@@ -30,7 +30,7 @@ public class LearnLinkedHashSet {
 		   fruits.add("Mango");
 		   fruits.add("Banana");  // Duplicate, will be ignored
 
-		   fruits.stream().forEach(System.out::println);
+		   fruits.forEach(System.out::println);
 
 	        // Output:
 	        // Banana
