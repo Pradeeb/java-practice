@@ -19,15 +19,16 @@ public class CreateThradUseLambdaFunction {
 		// above regular way 
 		// parameter pass here
 		
-	      List<String> filePaths = new ArrayList<>();
-	        for (int i = 1; i <= 1000; i++) {
-	            filePaths.add("C:/files/file" + i + ".txt");
-	        }
-	        for (String path : filePaths) {
-	        	 String threadName = "FileThread-" + path.substring(path.lastIndexOf("/") + 1); // or any unique part
-	            Thread t = new Thread(() -> creataFile(path),threadName);
-	            t.start();
-	        }
+		List<String> filePaths = new ArrayList<>();
+		for (int i = 1; i <= 1000; i++) {
+			filePaths.add("C:/files/file" + i + ".txt");
+		}
+
+		for (String path : filePaths) {
+			String threadName = "FileThread-" + path.substring(path.lastIndexOf("/") + 1); // or any unique part
+			Thread t = new Thread(() -> creataFile(path), threadName);
+			t.start();
+		}
 
 	
 	}
