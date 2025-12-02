@@ -1,5 +1,7 @@
 package com.java.practice.array;
 
+import java.util.Arrays;
+
 public class Q2FindThirstLargeElement {
 
 	public static void main(String[] args) {
@@ -35,6 +37,9 @@ public class Q2FindThirstLargeElement {
 		}
 		
 		  System.out.println("Third Largest Element: " + third);
+		  //stream use
+		  System.out.println("Third Largest Element: " + Arrays.stream(arr).sorted().limit(arr.length -2).max().getAsInt());
+		  
 	}
 
 }

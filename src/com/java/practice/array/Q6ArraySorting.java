@@ -7,6 +7,7 @@ public class Q6ArraySorting {
     public static void main(String[] args) {
         int[] arr = {0,3,1,5,6,2,3,4,7,9,8};
         sorting(arr);
+        System.out.println("Sorted Array: " + Arrays.toString(arr));// memory location same don't need return 
     }
 
     static void sorting(int[] arr) {
@@ -26,8 +27,6 @@ public class Q6ArraySorting {
                 
             }
         }
-
-        System.out.println("Sorted Array: " + Arrays.toString(arr));
 
     }
 }
