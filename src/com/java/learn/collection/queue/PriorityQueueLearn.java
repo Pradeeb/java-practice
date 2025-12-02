@@ -59,7 +59,7 @@ public class PriorityQueueLearn {
 		num.add(5);
 		num.add(3);
 		num.add(4);
-		num.add(1);
+		num.offer(1);
 		
 		System.out.println(num);
 		
@@ -69,6 +69,7 @@ public class PriorityQueueLearn {
 		name.add("pradeeb");
 		
 		
+		System.out.println(name.poll());// remove pradeep Retrieves and removes the head (min by default)
 		System.out.println(name);
 	}
 

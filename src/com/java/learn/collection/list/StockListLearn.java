@@ -42,8 +42,8 @@ public class StockListLearn {
 		stack.push("Apple");
 		stack.push("Banana");
 		stack.push("Cherry");
-
-		System.out.println("Stack: " + stack); // [Apple, Banana, Cherry]
+		stack.add("Lemon");
+		System.out.println("Stack: " + stack); // [Apple, Banana, Cherry, Lemon]
 
 		// Pop elements from the stack (first out: Cherry)
 		System.out.println("Popped: " + stack.pop()); // Cherry
