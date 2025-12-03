@@ -18,13 +18,13 @@ public class StreamFunctions {
 		
 		//toArray()
 		Object names[]=vehicles.stream().toArray();
-		System.out.println(names.length);
+		System.out.println(Arrays.toString(names));
 		
-		//limit()
+		//count()	
         long countOfVehicles=vehicles.stream().distinct().count(); //get the object count
 		System.out.println(countOfVehicles);
 		
-		//count()		
+		//limit()	
 		vehicles=vehicles.stream().limit(3).collect(Collectors.toList()); //limit return
 		System.out.println(vehicles);
 	
@@ -48,6 +48,9 @@ public class StreamFunctions {
 		//sorted() ==> reverse
 		System.out.println(num.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
 		System.out.println(vehicles.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()));//String sorted DSCE
+		
+		
+		System.out.println(Arrays.toString(num.stream().sorted(Comparator.reverseOrder()).toArray()));
 	}
 
 }
