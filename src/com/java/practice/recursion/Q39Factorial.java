@@ -14,7 +14,7 @@ public class Q39Factorial {
 
 	public static void main(String[] args) {
 	
-      int n=3;
+      int n=5;
       System.out.println("Factorial of " + n + " is: " + findFactorial(n));
 	}
    

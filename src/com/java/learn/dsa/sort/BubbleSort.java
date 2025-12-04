@@ -57,7 +57,7 @@ public class BubbleSort {
 		
 		int arr []= {42, 7, 89, 13 ,65 ,22 ,99 ,5 ,31 ,76};
        
-		for(int i=0; i < arr.length-i ; i++) {
+		for(int i=0; i < arr.length-1 ; i++) {
 			for(int j=0; j < arr.length-1-i ; j++) {
 				  // Check if the current element is greater than the next element
                 if (arr[j] > arr[j + 1]) {

@@ -8,7 +8,7 @@ public class Q40Fibonacci {
     }
     
 	public static int fibonacci(int n) {
-		System.out.println( n);
+		
         if (n == 0) {
             return 0; // Base case: F(0) = 0
         }
