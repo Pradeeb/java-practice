@@ -7,41 +7,22 @@ import java.util.Arrays;
 public class Test {
 
 	public static void main(String[] args) {
+		int arr []= {42, 7, 89, 13 ,65 ,22 ,99 ,5 ,31 ,76};
 		
-		int[] num= {1,5,2,3,4};
+	   for( int i=1; i<arr.length ; i++) {
+		   for( int j=i; j>0 ; j--) {
+			   
+			   if(arr[j] < arr[j+1]) {
+				   int temp=arr[j];
+				   arr[j]=arr[j+1];
+				   arr[j+1]=temp;
+			   }else {
+				   break;
+			   }
+		   }
+	   }
 		
-		quickSort(num,0,num.length-1);
-		
-		System.out.println(Arrays.toString(num));
+		System.out.println(Arrays.toString(arr));
 
 	}
-
-	private static void quickSort(int[] arr, int low, int high) {
-		
-		if(low >= high)	return;
-		
-		int start=low, end=high;
-		
-		int mid=(low+high)/2;
-		int pivot = 0;
-
-		while(start <= end) {
-			
-
-			while(arr[start]< pivot) {
-				start++;
-			}
-			while(arr[start]> pivot) {
-				end--;
-			}
-			
-			if(start <= end) {
-				
-			}
-			
-		}
-		
-		
-	}
-
 }
