@@ -5,7 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-//Fine first non repeat element from given string
+//Find first non repeat element from given string
 public class Q3 {
 
 	public static void main(String[] args) {
@@ -34,6 +34,20 @@ public class Q3 {
 				.findFirst().get().getKey();
 		
 		System.out.println(ans);
+		
+		// Own practice
+	     String name="asderewfsa";
+	     int[] num={1,2,5,2,1,2,5,3,8,6,4};
+	    
+			String ansForString = Arrays.stream(name.split(""))
+					.collect(Collectors.groupingBy(s -> s, LinkedHashMap::new, Collectors.counting())).entrySet()
+					.stream().filter(x -> x.getValue() == 1).findFirst().get().getKey();
+
+			int ansForInt = Arrays.stream(num).boxed()
+					.collect(Collectors.groupingBy(s -> s, LinkedHashMap::new, Collectors.counting())).entrySet()
+					.stream().filter(x -> x.getValue() == 1).findFirst().get().getKey();
+	     
+	     System.out.println(ansForInt);
 
 	}
 
