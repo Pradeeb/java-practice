@@ -1,26 +1,24 @@
 package com.java.test;
 
 import java.util.Arrays;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Test {
 	public static void main(String[] args) {
 		
-		int[] arr= {1,2,3,4,5};
+		int[] arr= {1,2,3,4,5,5,5,3,3,3,4};
 		
-		sortArray(arr);
-		System.out.println(Arrays.toString(arr));
+	     int candidate = 0;
+	        int count = 0;
+
+	        for (int num : arr) {
+	            if (count == 0) candidate = num;
+	            count += (num == candidate) ? 1 : -1;
+	        }
+		
+	 System.out.println(candidate);
+	
 	}
 
-	private static void sortArray(int[] arr) {
-		
-	  		for(int i=0 ; i< arr.length ;i++) {
-		  		for(int j=i+1 ; j< arr.length ;j++) {
-		  			if(arr[i]<arr[j]) {
-		  				int temp=arr[j];
-		  				arr[j]=arr[i];
-		  				arr[i]=temp;
-		  			}
-		  		}
-	  		}
-	}
 }
