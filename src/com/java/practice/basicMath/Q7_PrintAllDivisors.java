@@ -46,7 +46,7 @@ Constraints :
 public class Q7_PrintAllDivisors {
 
 	public static void main(String[] args) {
-		int a = 5;
+		int a = 10;
 		System.out.println(printAllDivisors(a));
 	}
 

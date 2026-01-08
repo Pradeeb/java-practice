@@ -90,8 +90,18 @@ public class StarPatterns {
 			}
 			System.out.println("");
 		}
-		
-		
+/*
+		Pattern 5 dimand
+	    *
+	   ***
+	  *****
+	 *******
+	*********
+	 *******
+	  *****
+	   ***
+	    *
+	*/	
 		System.out.println("");
 		System.out.println("Pattern 5 dimand");
 		

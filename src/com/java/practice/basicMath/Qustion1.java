@@ -14,11 +14,13 @@ public class Qustion1 {
 	      
 	      String out=null;
 	      
-	      if(N%2 != 0){
-	        out="odd";
-	      }else{
-	        out="even";
-	      }
+	      out= N%2 == 0? "Even":"Odd";
+	      
+//	      if(N%2 != 0){
+//	        out="odd";
+//	      }else{
+//	        out="even";
+//	      }
 	      return out;
 	  }
 }

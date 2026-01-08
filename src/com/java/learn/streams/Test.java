@@ -15,6 +15,7 @@ public class Test {
 	    .map(s -> {
 	        try {
 	        	System.out.println(s);
+//	        	if(s=="10")  throw new Exception();
 	            return Integer.parseInt(s);
 	        } catch (Exception e) {
 	            return null;   // or any fallback value

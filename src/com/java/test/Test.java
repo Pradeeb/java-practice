@@ -1,45 +1,29 @@
 package com.java.test;
 
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Set;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 // binary search 
 
-public class Test {
+public class Test{
 	
-	public static void main(String[] args) {
-		
-		String s="MCMXCIV";
-		
-		Map<Character,Integer> map=new HashMap<>();
-		
-		map.put('I', 1);
-		map.put('V', 5);
-		map.put('X', 10);
-		map.put('L', 50);
-		map.put('C', 100);
-		map.put('D', 500);
-		map.put('M', 1000);
-		
-		int result=0;
-		
-		for(int i=0; i<s.length(); i++) {
-			
-			int current=map.get(s.charAt(i));
-			
-			if(i+1 < s.length() && current < map.get(s.charAt(i+1))) {
-				
-				result -=current;
-				
-			}else {
-				result +=current;
-			}
-		}
-		
-		System.out.println(result);
 
+	 public static void main(String[] args) {
+		 
+		 int[] num= {1,2,3,4,5,6,7,8,9,5,2,6};
 		
-	   
-	}
-	
+		Set<Integer> set = Arrays.stream(num).boxed().collect(Collectors.toSet());
+		
+		set.add(10);
+		 
+
+		 
+	 }
 }

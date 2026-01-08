@@ -1,6 +1,7 @@
 package com.java.practice.array;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Q1FindMaxMin {
 
@@ -43,6 +44,9 @@ public class Q1FindMaxMin {
 		
 		//find second max value use stream
 		System.out.println("find second max value use stream => "+Arrays.stream(numbers).sorted().limit(numbers.length-1).max().getAsInt());
+		
+		System.out.println("find second minimum value use stream => "+Arrays.stream(numbers).sorted());
+
 		
 
 		

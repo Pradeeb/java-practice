@@ -14,7 +14,8 @@ public class Q2 {
 		String text="Thejavatechie";
 		
 		 List<String> ans = Arrays.stream(text.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
-				     .entrySet().stream()
+				     .entrySet()
+				     .stream()
 				     .filter(x -> x.getValue() > 1) // you want duplicate count use > instead ==
 				     .map(Map.Entry::getKey)
 				     .collect(Collectors.toList());
