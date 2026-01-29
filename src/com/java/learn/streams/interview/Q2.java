@@ -13,6 +13,8 @@ public class Q2 {
 
 		String text="Thejavatechie";
 		
+		String[] charA=text.split("");
+		
 		 List<String> ans = Arrays.stream(text.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
 				     .entrySet()
 				     .stream()

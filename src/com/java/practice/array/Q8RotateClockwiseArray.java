@@ -13,7 +13,9 @@ public class Q8RotateClockwiseArray {
 	static void clockwise(int[] arr) {
 		
 		int n=arr.length-1;
+		
 		int lastElement = arr[n];
+		
 		for(int i=n; i > 0 ; i--) {
 			  arr[i] = arr[i - 1];
 		}
