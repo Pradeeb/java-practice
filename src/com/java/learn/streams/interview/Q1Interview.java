@@ -52,7 +52,7 @@ public class Q1Interview {
 				new Employee(1,"Valan","IT",25000),
 				new Employee(2,"Pradeeb","IT",20000),
 				new Employee(3,"Selva","CSS",28000),
-				new Employee(4,"Arul","CSS",25000)
+				new Employee(4,"Arul","CS",25000)
 				);
 		
 		Map<String,Double> ans = employee.stream().collect(Collectors.groupingBy(Employee::getDepartment,Collectors.averagingDouble(Employee::getSalary)));

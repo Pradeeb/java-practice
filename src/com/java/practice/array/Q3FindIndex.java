@@ -1,4 +1,5 @@
 package com.java.practice.array;
+import java.util.Arrays;
 
 public class Q3FindIndex {
 

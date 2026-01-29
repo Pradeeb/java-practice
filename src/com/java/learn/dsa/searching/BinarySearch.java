@@ -34,10 +34,10 @@ public class BinarySearch {
 
 	//Iterative Method
 
-	private static int binarySearch(int a[], int start, int length, int findvalue) {
-		while (start <= length) {
+	private static int binarySearch(int a[], int start, int end, int findvalue) {
+		while (start <= end) {
 			
-			int mid = (start + length) / 2;
+			int mid = (start + end) / 2;
 			
 			 // Index of Element Returned
             if (a[mid] == findvalue) {
@@ -47,7 +47,7 @@ public class BinarySearch {
                 // so we decrease our r pointer to mid - 1 
 		      }
             else if (a[mid] > findvalue) {
-            	length = mid - 1;
+            	end = mid - 1;
 
             // Else the element can only be present
             // in right subarray
