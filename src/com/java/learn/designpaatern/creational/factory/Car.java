@@ -4,8 +4,7 @@ public class Car implements Vehicle {
 
 	@Override
 	public void drive() {
-		 System.out.println("Riding a Car");
-		
+		 System.out.println("Riding a Car");	
 	}
 
 }

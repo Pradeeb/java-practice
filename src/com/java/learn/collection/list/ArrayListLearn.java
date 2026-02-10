@@ -49,7 +49,7 @@ iterator()                            | Get iterator to loop
 public class ArrayListLearn {
 	
 	public static void main(String arg[]) {
-		
+		/*	
 		List<Integer> num=new ArrayList<>();
 		
 		//add  return boolean
@@ -87,7 +87,29 @@ public class ArrayListLearn {
 		//clear() remove all element
 		num.clear();
 		System.out.println("clear() remove all element"+num);
- 		
+		
+		
+		*/
+		
+		// CRUD operation 
+		List<String> student=new ArrayList<String>();
+		
+		//Create
+		student.add("valan");
+		System.out.println(student.add("pradeeb"));//true
+		student.add(0,"Nazeem");
+		System.out.println(student);
+		
+		//Read
+		System.out.println(student.get(0));
+		
+		//Update
+		student.set(1, "arul");
+		System.out.println(student);
+		
+		//Delete
+		student.remove("pradeeb");
+		System.out.println(student);
 		
 	}
 }
