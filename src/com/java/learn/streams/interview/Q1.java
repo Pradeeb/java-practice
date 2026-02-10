@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 public class Q1 {
 	
 	public static void main(String[] args) {
+		
 		System.out.println("Enter the word :");
 		Scanner sc=new Scanner(System.in);
 		String text=sc.nextLine();
@@ -18,7 +19,7 @@ public class Q1 {
 		Map<String, List<String>> map = Arrays.stream(text.split("")).collect(Collectors.groupingBy(s->s));
 		System.out.println(map);
 		
-		 Map<String, Long> ans = Arrays.stream(text.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		Map<String, Long> ans         = Arrays.stream(text.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		System.out.println(ans);
 	}
 

@@ -19,9 +19,9 @@ public class Q39Factorial {
 	}
    
 	public static int findFactorial(int n) {
-		if(n==1) {
-			return 1;
-		}
+		
+		if(n==1) return 1;
+		
 		return n*findFactorial(n-1);
 		
 	}

@@ -6,6 +6,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 class Employee{
+	
+	int id; String name;String department;double salary;
+	
 	public int getId() {
 		return id;
 	}
@@ -39,7 +42,7 @@ class Employee{
 		this.salary = salary;
 	}
 
-	int id; String name;String department;double salary;
+	
 };
 public class Q1Interview {
 	

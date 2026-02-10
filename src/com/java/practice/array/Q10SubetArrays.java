@@ -1,6 +1,9 @@
 package com.java.practice.array;
 
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /*
  Given two arrays: a[] and b[], where both arrays may contain duplicate elements. The task is to determine whether array b is a subset of array a. It's important to note that both arrays can be unsorted. Additionally, each occurrence of a duplicate element within an array is considered as a separate element of the set.
@@ -61,10 +64,12 @@ public class Q10SubetArrays {
 	//it's take less time
 	public static boolean isSubset1(int a[], int b[]) {
         // Add all elements of array 'a' to a HashSet
-        HashSet<Integer> set = new HashSet<>();
-        for (int num : a) {
-            set.add(num);
-        }
+//		Set<Integer> set1 = new HashSet<>();
+//        for (int num : a) {
+//            set.add(num);
+//        }
+//        
+        Set<Integer> set=Arrays.stream(a).boxed().collect(Collectors.toSet());
         
         // Check if all elements of array 'b' are present in the HashSet
         for (int num : b) {

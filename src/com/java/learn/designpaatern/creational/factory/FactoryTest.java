@@ -3,11 +3,11 @@ package com.java.learn.designpaatern.creational.factory;
 public class FactoryTest {
 	public static void main(String[] args) {
 
-        Vehicle v1 = VehicleFactory.getVehicle("CAR");
-        v1.drive();
+        Vehicle car = VehicleFactory.getVehicle("CAR");
+        car.drive();
 
-        Vehicle v2 = VehicleFactory.getVehicle("BIKE");
-        v2.drive();
+        Vehicle bike = VehicleFactory.getVehicle("BIKE");
+        bike.drive();
     }
 }
 /*
