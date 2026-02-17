@@ -9,5 +9,4 @@ public abstract class LearnAbstractt {
 	public void test3() {
 		System.out.println("this non abstract methed in abreact class");
 	}
-
 }
