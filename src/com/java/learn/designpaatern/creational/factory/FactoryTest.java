@@ -1,6 +1,7 @@
 package com.java.learn.designpaatern.creational.factory;
 
 public class FactoryTest {
+	
 	public static void main(String[] args) {
 
         Vehicle car = VehicleFactory.getVehicle("CAR");
