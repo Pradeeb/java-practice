@@ -1,16 +1,31 @@
 package com.java.test;
 
-public class Test{
+public class Test implements A, B {
     public static void main(String[] args) {
-    	String name=" valan ";
-    	System.out.println(name.length());
+
+    	Test t=new Test();
     	
-    	System.out.println(SKUTring(name).length());
-       }
-    
-   
-	public static String SKUTring(String str) {
-		return str.trim();
+    	t.test();
+    }
+
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
+		B.super.test();
 	}
-    
+
 }
+
+interface A {
+
+    default void test() {
+        System.out.println("Interface A default method");
+    }
+}
+
+interface B {
+    default void test() {
+        System.out.println("Interface B default method");
+    }
+}
+
