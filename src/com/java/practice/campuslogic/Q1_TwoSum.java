@@ -18,7 +18,7 @@ public class Q1_TwoSum {
 
 	public static void main(String[] args) {
 		 int [] nums = {2,7,11,15,4,5,5};
-		 int target = 10; //9
+		 int target = 9; //9
 		
 		 System.out.println( Arrays.toString(twosum(nums,target)));
 		 
@@ -48,7 +48,7 @@ public class Q1_TwoSum {
 			int complemet=target-arr[i];
 			
 			if(map.containsKey(complemet)) {
-				return new int[] {map.get(map),i};
+				return new int[] {map.get(complemet),i};
 			}else {
 				map.put(arr[i], i);
 			}
