@@ -1,31 +1,32 @@
 package com.java.test;
 
-public class Test implements A, B {
-    public static void main(String[] args) {
+import java.util.ArrayList;
+import java.util.List;
 
-    	Test t=new Test();
-    	
-    	t.test();
-    }
+public class Test{
+	public static void main(String[] args) {
+		
+		List<Integer> nums=new ArrayList<>();
 
-	@Override
-	public void test() {
-		// TODO Auto-generated method stub
-		B.super.test();
+		//create
+		nums.add(1);
+		nums.add(2);
+		nums.add(3);
+		nums.add(4);
+		nums.add(5);
+		
+		//insert
+		nums.add(4, 10);;
+		System.out.println(nums);
+		
+		//update
+		nums.set(4, 11);;
+		System.out.println(nums);
+		
+		nums.remove(11);
+		System.out.println(nums);
+
+		
+		
 	}
-
 }
-
-interface A {
-
-    default void test() {
-        System.out.println("Interface A default method");
-    }
-}
-
-interface B {
-    default void test() {
-        System.out.println("Interface B default method");
-    }
-}
-
