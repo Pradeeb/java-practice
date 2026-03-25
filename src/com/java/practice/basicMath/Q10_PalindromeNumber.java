@@ -15,26 +15,24 @@ Example 2:
 Input: n = 123
 Output: No*/
 
-
 public class Q10_PalindromeNumber {
 
 	public static void main(String[] args) {
 		System.out.println(is_palindrome(555));
 	}
-	
-	public static String is_palindrome(int n)
-    {
-        int og=n;
-        int ans=0;
-        while(n>0){
-            int last=n%10;
-            ans=ans*10+last;
-            n/=10;
-        }
-        if (og == ans) {
-        return "Yes";
-        }
-        return "No";
-    }
+
+	public static String is_palindrome(int n) {
+		int og = n;
+		int ans = 0;
+		while (n > 0) {
+			int last = n % 10;
+			ans = ans * 10 + last;
+			n /= 10;
+		}
+		if (og == ans) {
+			return "Yes";
+		}
+		return "No";
+	}
 
 }
