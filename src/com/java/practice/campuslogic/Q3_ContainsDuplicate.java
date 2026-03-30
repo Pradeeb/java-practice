@@ -32,6 +32,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Q3_ContainsDuplicate {
+	
+	/*
+	 * 
+	 * 1. create collection HashSet
+	 * 2. Iterate the array
+	 * 3. Add the value to set collection 
+	 * 
+	 * */
 
     public static void main(String[] args) {
         int[]  arr= {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
