@@ -1,0 +1,8 @@
+1. lambda function 
+2. Functional interface
+3. Stream API
+4. Method reference
+5. Date Time API
+6. Optional class
+7. Interfaces have static and default methods
+8. CompletableFuture
