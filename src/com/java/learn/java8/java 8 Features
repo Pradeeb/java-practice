@@ -1,0 +1,17 @@
+1. lambda function 
+2. Functional interface
+3. Stream API
+4. Method reference
+5. Date Time API
+6. Optional class
+7. Interfaces have static and default methods
+8. CompletableFuture
+
+
+2. Functional interface
+   1. Runnable  run()         => use in thread void
+   2. Callable  call()        => use in thread return value or exception
+   3. Supplier  get()         => create number or object lazy loading 
+   4. Consumer  accept()      => Takes input and performs an operation (no return value) ** java stream().forEach( accept() => syso())
+   5. Predicate test()        => Predicate<T> is used for conditions (true/false checks) ** list.stream().filter(x -> x > 10)   
+   6. Function  apply()       => Function<T, R> is used to transform input into output   ** list.stream().map(x -> x * 10)   // Function used here
