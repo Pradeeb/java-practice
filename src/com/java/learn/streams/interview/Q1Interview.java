@@ -7,7 +7,9 @@ import java.util.stream.Collectors;
 
 class Employee{
 	
-	int id; String name;String department;double salary;
+	private int id;
+	private String name, department;
+	private double salary;
 	
 	public int getId() {
 		return id;
@@ -46,10 +48,7 @@ class Employee{
 };
 public class Q1Interview {
 	
-
-
 	public static void main(String[] args) {
-		
 		
 		List<Employee> employee=Arrays.asList(
 				new Employee(1,"Valan","IT",25000),
@@ -63,5 +62,4 @@ public class Q1Interview {
 		System.out.println(ans);
 
 	}
-
 }
