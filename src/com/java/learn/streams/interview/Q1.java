@@ -19,7 +19,7 @@ public class Q1 {
 		Map<String, List<String>> map = Arrays.stream(text.split("")).collect(Collectors.groupingBy(s->s));
 		System.out.println(map);
 		
-		Map<String, Long> ans         = Arrays.stream(text.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		Map<String, Long> ans = Arrays.stream(text.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
 		System.out.println(ans);
 	}
 
