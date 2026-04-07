@@ -1,22 +1,17 @@
 package com.java.test;
 
-public class Test implements a {
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Test {
+
 
 	public static void main(String[] args) {
-		Test test=new Test();
-		test.test();
+		String name="valan";
+		
+		char[] ans=name.toCharArray();
+		System.out.println(ans);
 	}
-}
 
- interface a extends b{
-	default void test() {
-		b.super.test();
-		System.out.println("a");
-	};
-}
 
- interface b{
-	 default void test() {
-			System.out.println("b");
-		};
 }
