@@ -1,4 +1,4 @@
-package com.java.learn.multithreas;
+package com.java.learn.multithread;
 
 public class CreateThresUseClass extends Thread {
 	@Override
