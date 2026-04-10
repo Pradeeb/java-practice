@@ -1,4 +1,4 @@
-package com.java.learn.multithreas;
+package com.java.learn.multithread;
 
 import java.util.ArrayList;
 import java.util.List;

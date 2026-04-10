@@ -9,7 +9,7 @@ import java.util.Optional;
  * 4. isEmpty()                    => If a value is not present, returns true, otherwise false ( java 11 )*
  * 5. get()                        => If a value is present, returns the value, otherwise throws NoSuchElementException.
  * 6. orElse("default")            => If a value is present, returns the value, otherwise returns other.
- * 7. orElseGet(()->"dumy"))       => If a value is present, returns the value, otherwise returns the resultproduced by the supplying function.
+ * 7. orElseGet(()->"dumy"))       => If a value is present, returns the value, otherwise returns the result produced by the supplying function.
  * 
  * 8. orElseThrow(Supplier<? extends String> supplier)  
  * 9. orElseThrow(Supplier<? extends RuntimeException> exceptionSupplier)
