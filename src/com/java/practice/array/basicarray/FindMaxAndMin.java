@@ -1,3 +1,4 @@
+
 package com.java.practice.array.basicarray;
 
 import java.util.Arrays;
@@ -5,53 +6,48 @@ import java.util.Collections;
 import java.util.List;
 
 public class FindMaxAndMin {
-	
-	public static void main(String[] args) {
-		int[] res = findMaxMin(new int[]{3,1,9,2,0}); 
-		
-		//method 1
-		System.out.println(Arrays.toString(res));
-		
-		//method 2
-		int[] arr=new int[]{3,1,9,2,0};
-		Arrays.sort(arr);
-		System.out.println(arr[arr.length-1]+" "+arr[0]);
-		
-		//method 3
-		int[] arr1=new int[]{3,1,9,2,0};
-		
-		System.out.println(Arrays.stream(arr1).min().getAsInt());
-		System.out.println(Arrays.stream(arr1).max().getAsInt());
-		
-		//method 4
-		findMinAndMax();
-		
-	}
 
-	private static void findMinAndMax() {
-		Integer[] arr = {3, 1, 9, 2, 0};
+    public static void main(String[] args) {
+        int[] res = findMaxMin(new int[]{3,1,9,2,0});
+
+        // method 1: Manual iteration
+        System.out.println(Arrays.toString(res));
+
+        // method 2: Sorting
+        int[] arr = new int[]{3,1,9,2,0};
+        Arrays.sort(arr);
+        System.out.println(arr[arr.length-1] + " " + arr[0]);
+
+        // method 3: Streams
+        int[] arr1 = new int[]{3,1,9,2,0};
+        System.out.println(Arrays.stream(arr1).min().getAsInt());
+        System.out.println(Arrays.stream(arr1).max().getAsInt());
+
+        // method 4: Collections
+        findMinAndMax();
+    }
+
+    private static void findMinAndMax() {
+        Integer[] arr = {3, 1, 9, 2, 0};
         List<Integer> list = Arrays.asList(arr);
 
         int max = Collections.max(list);
         int min = Collections.min(list);
 
         System.out.println("Max: " + max + ", Min: " + min);
-		
-	}
+    }
 
-	private static int[] findMaxMin(int[] is) {
-		int max=Integer.MIN_VALUE,min=Integer.MAX_VALUE;
-		
-		for(int i=0 ; i < is.length ;i++) {
-			if(max<=is[i]) max=is[i];
-			if(min>=is[i]) min=is[i];
-		}
-		return new int[] {max,min};
-	}
-	
-	
+    private static int[] findMaxMin(int[] is) {
+        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
 
+        for (int i = 0; i < is.length; i++) {
+            if (max <= is[i]) max = is[i];
+            if (min >= is[i]) min = is[i];
+        }
+        return new int[]{max, min};
+    }
 }
+
 
 
 /*
