@@ -15,7 +15,7 @@ public class Q6ArraySorting {
         // Using Bubble Sort for demonstration
         for (int i = 0; i < arr.length; i++) {
         	
-            for (int j = 0; j < arr.length-1-i; j++) {
+            for (int j = i+1; j < arr.length-1; j++) {
                 // Check if the current element is greater than the next element
                 if (arr[j] > arr[j + 1]) {
                     // Swap elements
