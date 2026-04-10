@@ -10,7 +10,7 @@ public class Q3 {
 
 	public static void main(String[] args) {
 		
-		String text="Thejavatechie";
+		String text="thejavatechie";
 
 		// Wrong answer given 
 		
