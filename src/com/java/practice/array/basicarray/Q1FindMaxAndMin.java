@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class FindMaxAndMin {
+public class Q1FindMaxAndMin {
 
     public static void main(String[] args) {
         int[] res = findMaxMin(new int[]{3,1,9,2,0});

@@ -40,7 +40,7 @@ Pair sum problems
  * 
  * */
 
-public class ReverseAnArray {
+public class Q4ReverseAnArray {
 
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 3, 4, 5 };

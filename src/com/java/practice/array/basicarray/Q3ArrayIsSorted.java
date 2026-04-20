@@ -10,7 +10,7 @@ package com.java.practice.array.basicarray;
 4. If the loop completes, the array is sorted, so returns true.
  * 
  * */
-public class ArrayIsSorted {
+public class Q3ArrayIsSorted {
 
 	public static void main(String[] args) {
 

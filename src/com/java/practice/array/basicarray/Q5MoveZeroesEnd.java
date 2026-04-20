@@ -21,7 +21,7 @@ Fill remaining positions with 0
 ✅ O(1) space complexity
 
 */
-public class MoveZeroesEnd {
+public class Q5MoveZeroesEnd {
 
 	public static void main(String[] args) {
 

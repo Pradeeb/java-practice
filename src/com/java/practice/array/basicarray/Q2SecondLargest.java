@@ -2,7 +2,7 @@ package com.java.practice.array.basicarray;
 
 import java.util.Arrays;
 
-public class SecondLargest {
+public class Q2SecondLargest {
 
 	public static void main(String[] args) {
 		
