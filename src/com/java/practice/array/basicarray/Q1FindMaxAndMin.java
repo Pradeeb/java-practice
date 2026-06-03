@@ -8,9 +8,9 @@ import java.util.List;
 public class Q1FindMaxAndMin {
 
     public static void main(String[] args) {
+    	
+    	// method 1: Manual iteration
         int[] res = findMaxMin(new int[]{3,1,9,2,0});
-
-        // method 1: Manual iteration
         System.out.println(Arrays.toString(res));
 
         // method 2: Sorting
