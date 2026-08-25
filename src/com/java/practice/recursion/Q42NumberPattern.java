@@ -35,6 +35,7 @@ public class Q42NumberPattern {
         System.out.print(n+" ");
 
         // Base condition: Stop when n returns to original in increasing phase
+        
         if (!decreasing && n == original) {
             return;
         }
