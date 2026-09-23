@@ -12,7 +12,7 @@ import java.util.Arrays;
 5. when j is there that length are not duplicate
 */
 
-public class RemoveDuplicate {
+public class Q07RemoveDuplicate {
 
 	public static void main(String[] args) {
 		

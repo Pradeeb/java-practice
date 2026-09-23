@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Q5_3Sum {
+public class Q10_3Sum {
 
 	public static void main(String[] args) {
 		int[] arr = { -1, 0, 1, 2, -1, -4 };

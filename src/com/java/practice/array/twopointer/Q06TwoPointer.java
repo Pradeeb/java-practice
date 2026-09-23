@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 // it is working only sorted arrays 
-public class TwoPointer {
+public class Q06TwoPointer {
 
 	public static void main(String[] args) {
 		int[] num = {4, 1, 7, 3 };

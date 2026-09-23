@@ -1,6 +1,6 @@
 package com.java.practice.array.twopointer;
 
-public class Q4ValidPalindrome {
+public class Q09ValidPalindrome {
 
 	public static void main(String[] args) {
 

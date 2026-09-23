@@ -1,6 +1,6 @@
 package com.java.practice.array.twopointer;
 
-public class Q3ContainerWithMostWater {
+public class Q08ContainerWithMostWater {
 
 	public static void main(String[] args) {
 		
